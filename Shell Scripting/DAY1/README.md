@@ -1,1 +1,13 @@
-sgsgf
+# Commands
+- #!/bin/bash  -> shabang
+- #i am good -> single line comment
+- << comment comment    -> multiline comment box
+- name = "jetha" -> (name is variable can vary and jetha is constant
+- echo ""   -> print something
+- date is $(date)  -> for finding date
+- read  -> to input any value
+- sudo useradd -m $username -> adding new user (-m — tells the system to create a home directory for the new user)
+      - arguments : they are written after the running script (can be write as :
+            - echo "The characters in jethala society are $1"
+            - $0 is file name itslef and $1 is argument no 1 typed
+- 
