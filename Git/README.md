@@ -49,10 +49,21 @@ git add .              # stage all changes
 ```bash
 git commit -m "Added new feature"
 ```
+### 🛑 4.  Ignoring Unwanted Files
+If you have a file like notes.txt that you don’t want Git to track (e.g., temporary notes, credentials, or logs), you can ignore it using .gitignore.
+
+echo + .gitignore – Tell Git to always ignore a file.
+```bash
+echo notes.txt >> .gitignore     # add to ignore list
+git rm --cached notes.txt        # stop tracking if already tracked
+git add .gitignore
+git commit -m "Ignore notes.txt"
+```
+🔒 This ensures notes.txt won’t be accidentally committed in the future.
 
 ---
 
-### ✅ 4. Branching
+### ✅ 5. Branching
 
 **`git branch`** – List or create branches.
 
