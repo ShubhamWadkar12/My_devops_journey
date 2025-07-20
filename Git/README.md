@@ -153,6 +153,19 @@ git revert <commit-id>
 ```bash
 git log
 ```
+**`git log --name-only`** - Detailed Changes visible if any user makes changes
+
+```bash
+git log --name-only
+```
+**` git log --oneline`** - Chnages made in oneline format
+```bash
+ git log --oneline`**
+```
+**` git log -n 3 `** - Shows only 3 commits out of all
+```bash
+git log -n 3
+```
 
 **`git diff`** – Compare changes.
 
