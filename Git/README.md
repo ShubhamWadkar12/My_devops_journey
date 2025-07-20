@@ -1,6 +1,6 @@
 
-# ✅ Git Commands for DevOps Engineers
----
+# <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Logo" width="30"/> Git Commands for DevOps Engineers
+
 
 ### ✅ 1. Configuration Commands
 
