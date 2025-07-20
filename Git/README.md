@@ -78,6 +78,18 @@ git branch dev          # create branch 'dev'
 git checkout dev
 ```
 
+**`git checkout -b dev `** – Creates new branch and instantly switches
+
+```bash
+git checkout -b dev
+```
+
+**`git checkout -d dev `** – Delete a branch
+
+```bash
+git checkout -d dev
+```
+
 **`git switch`** – Alternative to checkout (simpler syntax).
 
 ```bash
@@ -165,6 +177,11 @@ git log --name-only
 **` git log -n 3 `** - Shows only 3 commits out of all
 ```bash
 git log -n 3
+```
+
+**` git log --graph --decorate `** - Dsiplays whole branches data
+```bash
+ git log --graph --decorate
 ```
 
 **`git diff`** – Compare changes.
