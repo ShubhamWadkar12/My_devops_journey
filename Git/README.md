@@ -9,8 +9,6 @@ git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
-## chgjhgjyhjyhgjtyjuytfjujytfuikfuytik uy
-
 ### ✅ 2. Repository Setup
 
 **`git init`** – Initialize a new Git repository.
