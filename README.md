@@ -1,7 +1,7 @@
 # 🚀 DevOps Learning Hub
 
 Welcome to my curated DevOps Learning Repository!  
-This folder contains organized resources, hands-on notes, and practice files for mastering DevOps concepts one topic at a time. 🌱
+This folder contains organized resources, hands on notes, and practice files for mastering DevOps concepts one topic at a time. 🌱
 
 ---
 
