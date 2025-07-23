@@ -39,7 +39,7 @@ To change the default port from 8080 to something else:
 sudo vi /lib/systemd/system/jenkins.service
 Find and modify:
 ```
---httpPort=8080 → --httpPort=YOUR_PORT
+> --httpPort=8080 → --httpPort=YOUR_PORT
 
 #### ▶️ Step 5: Start Jenkins Service
 
