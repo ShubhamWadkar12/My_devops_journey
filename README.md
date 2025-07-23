@@ -20,7 +20,7 @@ This folder contains organized resources, hands-on notes, and practice files for
 
 ## 📌 Why this Repo?
 
-> 🧠 To learn by **doing** — not just reading.  
-> 🧰 To maintain a central place for all **hands-on notes**, **demos**, and **cheatsheets**.  
-> 🧑‍💻 For quick reference when i need to study.
-> ⚡ *Keep learning, keep building. DevOps is a journey, not a destination.* 🌊
+> 🧠 To learn by **practising**  not just reading 🧠
+> 🔐 To maintain a central place for all **hands-on notes**, **demos**, and **cheatsheets** 🔐  
+> 🧑‍💻 For quick reference when i need to study 🧑‍💻 
+> ⚡ *Build, break, learn, repeat*⚡
