@@ -12,6 +12,8 @@ This folder contains organized resources, hands-on notes, and practice files for
 | 📁 `Networking`       | Fundamentals of computer networking, OSI model, DNS, IPs |
 | 📁 `linux`            | Linux commands, file systems, permissions, bash scripting |
 | 📁 `python`           | Python scripts and utilities used in DevOps workflows |
+| 📁 `Docker`           | build images, run containers, and write simple Dockerfiles |
+| 📁 `Jenkins`           | create pipelines, run jobs, and automate simple build tasks |
 
 ---
 
