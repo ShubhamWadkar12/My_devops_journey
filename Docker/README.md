@@ -140,3 +140,35 @@ docker run -p 8000:8000 node-todo-app
 ```bash
 docker stop (container ID)
 ```
+---
+## Docker Networking
+Docker network allows containers to talk to each other, and also to the outside world (like your browser or the internet).
+
+| Types        | Use Case                                                         |
+| ----------- | ---------------------------------------------------------------- |
+| **bridge**  | Default. Great for connecting containers on the same host.       |
+| **host**    | Shares the host network. No isolation. Fastest, but less secure. |
+| **none**    | Completely isolated. Useful for testing container-only logic.    |
+| **overlay** | For **multi-host** communication (used in Docker Swarm).         |
+| **macvlan** | Assigns a **real IP** from your network to a container.          |
+
+---
+-  docker network create mynetwork -d (network name)    -> to create a new network
+-  docker run -d -p 5000:5000 -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-backend:latest
+
+### 🔍 Command Breakdown
+
+| Part                         | Meaning                                                                 |
+|-----------------------------|-------------------------------------------------------------------------|
+| `docker run`                | Run a new Docker container                                              |
+| `-d`                        | Run in detached mode (in background)                                    |
+| `-p 5000:5000`              | Map port `5000` on your system to `5000` in the container (for access via `localhost:5000`) |
+| `-e MYSQL_HOST=mysql`       | Set environment variable. Tells the app the MySQL server name is `mysql` |
+| `-e MYSQL_USER=root`        | Sets the MySQL username to `root`                                      |
+| `-e MYSQL_PASSWORD=root`    | Sets the MySQL password to `root`                                      |
+| `-e MYSQL_DB=devops`        | Sets the MySQL database name to `devops`                               |
+| `two-tier-backend:latest`   | The Docker image being used (with `latest` tag)                        |
+
+---
+- docker ps -a     -> to check killed images
+- docker logs(container name)  -> to check why was the image not created
