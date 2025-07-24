@@ -154,7 +154,13 @@ Docker network allows containers to talk to each other, and also to the outside 
 
 ---
 -  docker network create mynetwork -d (network name)    -> to create a new network
+-  docker run -d --name mysql --network two-tier -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql     ->runs sql
+-  docker run -d -p 80:80 --name flask-app flask-app      -> runnig fask app on port 80
 -  docker run -d -p 5000:5000 -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops two-tier-backend:latest
+  
+<img width="937" height="173" alt="image" src="https://github.com/user-attachments/assets/70f5c1c4-d00a-40a4-9f77-327e8aba1cfd" />
+
+✅ The Flask App is successfully running on localhost:5000 port
 
 ### 🔍 Command Breakdown
 
@@ -169,6 +175,34 @@ Docker network allows containers to talk to each other, and also to the outside 
 | `-e MYSQL_DB=devops`        | Sets the MySQL database name to `devops`                               |
 | `two-tier-backend:latest`   | The Docker image being used (with `latest` tag)                        |
 
----
 - docker ps -a     -> to check killed images
-- docker logs(container name)  -> to check why was the image not created
+- docker logs(container ID)  -> to check why was the image not created
+- docker stop b9d7a234c779 && docker rm b9d7a234c779     -> to stop a docker image and remove it
+- docker exec -it (container ID) bash   -> to go inside sql container
+- exit and ctrl+D   -> to come out of mysql
+- docker restart (container ID) -> to restart the container
+
+---
+
+## 👥 Docker Volumes and Storage
+
+- docker volume create (volume name)    -> to create a volume
+- docker stop && docker rm    -> stops the container of sql
+- docker run -d --name mysql --network two-tier -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql                  -> bind the containerwith the backup volume
+- docker restart (app name)   -> restart the app
+ > You can see that the data entered before dleetion is not deleted it will remain same
+
+##### **OR**
+
+- Make sub folder in system /home/shubham/volumes/mysql
+- go and stop the mysql contaioner running
+- and then write the command
+```bash
+docker run -d --name mysql --network two-tier -v /home/shubham/volumes/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASDE=devops mysql
+6acbdc0d9a5e19b04de86c7671a6ccaa855e394d26b005cb7d19800a2565d161
+```
+- It will bind the backup in the folder and then do the app restart ypu will be able to see the data in folder
+
+## Docker registry
+- docker image tag two-tier-flask-app-flask:latest shubhamwadkar12/two-tier-backend:latest    ->renames image to push
+- docker push shubhamwadkar12/two-tier-backend:latest     -> image pushed to docker hub on website
