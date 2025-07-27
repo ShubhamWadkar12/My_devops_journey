@@ -14,6 +14,7 @@
 2. You **attach** it to your EC2 instance.
 3. Your instance can **read and write** data to it like a normal disk.
 4. You can also **detach** and use it with another EC2.
+5. You can also Modify the size after creating the volume
 
 ---
 
