@@ -48,3 +48,44 @@
 ---
 
 💡 *Use the right EBS type to save money and get better performance.*
+
+## 📸 AWS EBS Snapshots
+
+### 💡 What is it?
+
+- A **snapshot** is like taking a **photo of your hard drive** (EBS volume) at a moment in time.
+- It saves your data so you can **restore it later** if something goes wrong.
+- Stored by AWS securely in the background.
+
+---
+
+### 🔧 Why Use It?
+
+- 🛑 **Backup** your data before deleting or changing anything.
+- 🔁 **Restore** the same data anytime by creating a new volume from the snapshot.
+- 💸 **Saves money** – only the changes after the first snapshot are stored.
+- 🌍 Can copy to other AWS regions for safety.
+
+---
+
+### 🛠️ When to Use?
+
+- Before stopping or terminating your EC2 instance.
+- Before installing new software or updates.
+- If you want to **move your data to another region**.
+- To **automate backups** regularly.
+
+---
+
+### 🧪 Simple AWS CLI Commands
+
+```bash
+# Take a snapshot of your EBS volume
+aws ec2 create-snapshot --volume-id vol-xxxxxx --description "My backup"
+
+# List your snapshots
+aws ec2 describe-snapshots --owner-ids self
+
+# Restore a volume from your snapshot
+aws ec2 create-volume --snapshot-id snap-xxxxxx --availability-zone us-east-1a
+
