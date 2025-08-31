@@ -44,3 +44,47 @@ Python supports several types of operators:
 - Logical Operators:     and, or, not
 - Booleans (bool):      True or False
 - None (NoneType):      Null
+
+# 🐍 Type Function, Typecasting & Input
+
+---
+
+## 🔹 `type()` Function
+The `type()` function is used to find the **data type** of a variable in Python.
+
+```python
+a = 31
+print(type(a))  # <class 'int'>
+
+b = "31"
+print(type(b))  # <class 'str'>
+```
+
+## 🔹 Typecasting
+
+Python allows conversion between data types when possible.
+```
+# Integer to String
+str(31)   # "31"
+
+# String to Integer
+int("32") # 32
+
+# Integer to Float
+float(32) # 32.0
+
+"31" is a string literal
+
+31 is a numeric literal
+```
+
+## 🔹 input() Function
+
+The input() function allows the user to take input from the keyboard.
+```
+A = input("Enter name: ")
+print("You entered:", A)
+
+If the user enters Shubham, the output will be "Shubham"
+Important: The output of input() is always a string, even if a number is entered.
+```
