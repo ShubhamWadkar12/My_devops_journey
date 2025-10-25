@@ -63,10 +63,21 @@ In programming, a **data type** is a classification that specifies what kind of 
 - You can define your own **data types** using **classes and objects**:
 
 ```python
+# Custom data type: Person
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
+# Create an object
 p = Person("Alice", 25)
-print(p.name, p.age)
+
+# Print details
+print(p.name)  # Alice
+print(p.age)   # 25
+```
+### ✅ Explanation in one line:
+
+- class Person: → defines a new type.
+- p = Person("Alice", 25) → creates an object of that type.
+- p.name / p.age → access the stored values.
