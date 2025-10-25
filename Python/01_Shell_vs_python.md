@@ -16,7 +16,7 @@ Shell scripting is best for quick, system-level tasks and command-line automatio
    Running and controlling terminal commands and utilities efficiently.  
 
 3. **Quick Tasks:**  
-   Perfect for small scripts and one-time jobs.  
+   Perfect for small scripts and one time jobs.  
 
 4. **Text Processing:**  
    Useful for parsing logs, searching, and replacing text.  
@@ -34,7 +34,7 @@ Python is more flexible and powerful for complex automation, data handling, and 
    Great for tasks needing loops, conditions, and advanced logic.  
 
 2. **Cross-Platform Work:**  
-   Python runs on all major operating systems — perfect for teams using different environments.  
+   Python runs on all major operating systems perfect for teams using different environments.  
 
 3. **API Integration:**  
    Comes with libraries to connect easily with APIs, databases, and web services.  
@@ -65,7 +65,7 @@ Python is more flexible and powerful for complex automation, data handling, and 
 
 ## 🚀 Final Thought
 
-> 🧠 Use **Shell Scripting** for quick, system-level automation.  
+> 🧠 Use **Shell Scripting** for quick, system level automation.  
 > 💻 Use **Python** when your task involves logic, APIs, data, or needs to scale.  
 
 Together, they make you a complete **DevOps Engineer**. ⚙️🔥
